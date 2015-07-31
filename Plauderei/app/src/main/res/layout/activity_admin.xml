@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="de.devacon.xorando.plauderei.AdminActivity">
+    <LinearLayout android:id="@+id/backList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:choiceMode="multipleChoice"
+            ></ListView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/deleteSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:src="@drawable/delete"/>
+                <ImageButton android:id="@+id/playSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:src="@drawable/start"/>
+            </LinearLayout>
+            <ImageButton android:id="@+id/personSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/personxbraun"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/personDialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Vorname"/>
+
+        <EditText android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Familienname"/>
+        <RadioButton android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:text="männlich"
+            android:layout_height="40dp" />
+        <RadioButton android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:text="weiblich"
+            android:layout_height="40dp" />
+        <Button android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:text="Speichern"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+<GridLayout android:id="@+id/grid"  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowOrderPreserved="true"
+    android:columnCount="2"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ImageButton android:id="@+id/play" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:src="@drawable/play"/>
+    <ImageButton android:id="@+id/stop" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:src="@drawable/stop"/>
+    <ImageButton android:id="@+id/delete" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:src="@drawable/delete"/>
+    <ImageButton android:id="@+id/list" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:src="@drawable/liste"/>
+    <ImageButton android:id="@+id/person" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:src="@drawable/personxorange"/>
+
+
+</GridLayout>
+</RelativeLayout>

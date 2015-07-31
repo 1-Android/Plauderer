@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Plauderei</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Einstellen</string>
+    <string name="SageWas">Sprich für mich</string>
+    <string name="title_activity_admin">EInstellungen</string>
+</resources>
